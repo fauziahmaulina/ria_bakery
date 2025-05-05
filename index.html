@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ria Bakery</title>
+  <link rel="stylesheet" href="landingpage.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.11/lottie.min.js"></script>
+
+</head>
+<body>
+  <header class="header">
+    <div class="right-section">
+      <button class="register-btn">Register</button>
+      <div class="burger" onclick="toggleMenu(this)">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+    
+    <div class="left-section">
+      <div class="logo">Ria Bakery</div>
+    </div>
+    
+    <ul class="nav-links" id="main-nav">
+      <li><a href="#home" onclick="closeMenu()">Home</a></li>
+      <li><a href="#menu" onclick="closeMenu()">Menu</a></li>
+      <li><a href="#order" onclick="closeMenu()">Order Now</a></li>
+      <li><a href="#about" onclick="closeMenu()">About Us</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+  </header>
+
+  <div id="overlay"></div>
+
+<!--Home Section-->
+  <section id="home" class="hero">
+    <h1>BAKED GOODS,<br>Freshly Crafted Breads & Sweets, Made to Delight!</h1>
+    <p>Freshly baked each morning using time-honored recipes and premium ingredients, our breads and sweets bring warmth and comfort to every moment.<br>Every bite is history.</p>
+    <button onclick="scrollToSection('menu')">TRY NOW &rarr;</button>
+  </section>
+
+<!--Menu Section-->
+<div class="carousel-wrapper">
+  <section id="menu" class="gallery">
+    <div class="menu-grid">
+
+  <!--Carousel Left-->
+  <div class="menu-text">
+    <h2>Step into a world of <br><span>summer delights</span> with our freshly baked pastries and breads, each one a bite of pure happiness!</h2>
+    <p>Our menu is filled with treats that bring out the best of summer flavors, from light and airy to rich and indulgent. Each item is baked fresh daily to ensure it’s as delicious as possible, every time.</p>
+</div>
+
+
+  <!--Carousel Right-->
+  <div class="carousel-col">
+    <div class="carousel-wrapper">
+      <button id="prevbutton">&laquo;</button>
+
+      <div class="carousel-bg">
+      <div class="carousel-track">
+        <div class="item">
+          <div class="image-wrapper">
+            <img src="img/bananabread.jpeg" alt="Banana Bread">
+            <div class="caption">Banana Bread</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="image-wrapper">
+            <img src="img/cheesecake.jpeg" alt="Cheesecake">
+            <div class="caption">Cheesecake</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="image-wrapper">
+            <img src="img/chococake.jpeg" alt="Chococake">
+            <div class="caption">Chococake</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="image-wrapper">
+            <img src="img/ciabatta.jpeg" alt="Ciabatta">
+            <div class="caption">Ciabatta</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="image-wrapper">
+            <img src="img/croissant.jpeg" alt="Croissant">
+            <div class="caption">Croissant</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="image-wrapper">
+            <img src="img/donuts.jpeg" alt="Donuts">
+            <div class="caption">Donuts</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="image-wrapper">
+            <img src="img/frenchbag.jpeg" alt="Frenchbag">
+            <div class="caption">Frenchbag</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="image-wrapper">
+            <img src="img/macaron.jpeg" alt="Macaron">
+            <div class="caption">Macaron</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="image-wrapper">
+            <img src="img/muffins.jpeg" alt="Muffins">
+            <div class="caption">Muffins</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="image-wrapper">
+            <img src="img/strawberrytart.jpeg" alt="Strawberry Tart">
+            <div class="caption">Strawberry Tart</div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-caption">Menu Section</div>
+      </div>
+
+      <button id="nextbutton">&raquo;</button>
+    </div>
+    </div>
+
+  </div>  
+</section>
+
+</div>
+
+<!--About Section-->
+<section id="about" class="content-section">
+  <div class="about-text">
+    <h2>About Us</h2>
+    <p>At Ria Bakery, we believe in the magic of baking. Our passion for creating delicious treats is evident in every loaf of bread and pastry we make. We use only the finest ingredients to ensure that each bite is a delightful experience.</p>
+  </div>
+  
+  <div class="about-image">
+    <img src="img/shop.jpeg" alt="Bakery Image" />
+  </div>
+</section>
+
+  <!--Contact Section-->
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <!--Left Column-->
+    <div class="contact-info">
+      <div id="lottie-animation"></div>
+      <div class="contact-details">
+        <h2>Visit Us</h2>
+        <p><strong>Address:</strong> 123 Indonesia Merdeka, Jakarta</p>
+        <p><strong>Hours:</strong> Mon-Sat, 8am - 6pm</p>
+        <p><strong>Phone:</strong> (+62)82 1234 56789</p>
+      </div>
+    </div>
+
+
+    <!--Right Column-->
+    <div class="contact-form-box">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows = "4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  
+  </div>
+</section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-col motto">
+        <h3>Ria Bakery</h3>
+        <p>"Baked with Love, Served with Joy."</p>
+      </div>
+
+      <div class="footer-col social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; Fauziah M.F. All Rights Reserved.</p>
+    </div>
+    
+  </footer>
+
+  <script src="landingpage.js" defer></script>
+
+  
+</body>
+</html>
